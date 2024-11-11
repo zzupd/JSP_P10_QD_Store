@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="/style/style.css?v">
+</head>
+<body>
+	<div id="wrap">
+		<h1>상품등록</h1>
+		<hr>
+		<form action="regProc.jsp" method="post"
+		enctype="multipart/form-data" id="regForm">
+		
+			<table>
+				<tbody>
+					<tr>
+						<td>상품이미지</td>
+						<td>
+							<input type="file" name="fileName" autofocus>
+						</td>
+					</tr>
+					<tr>
+						<td>상품명</td>
+						<td>
+							<input type="text" name="goodsName">
+						</td>
+					</tr>
+					<tr>
+						<td>가격</td>
+						<td>
+							<input type="text" name="price">
+						</td>
+					</tr>
+					<tr>
+						<td class="goodsDesc">상품설명</td>
+						<td>
+							<textarea name="content" id="content"></textarea>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		
+		</form>
+		<hr>
+		<div id="btnArea">
+			<button form="regForm">등록</button>
+			<button form="regForm" type="reset">초기화</button>
+			<button type="button" id="btnGoList">목록</button>
+		</div>
+		
+	</div>
+	<!-- div#wrap -->
+	<script src="/script/jquery-3.7.1.min.js"></script>
+	<script src="/script/script.js"></script>
+</body>
+</html>
